@@ -1,0 +1,12 @@
+Company Policy: Mandatory Use of Traefik for Ingress Resources
+
+Objective: To standardize network traffic management within our Kubernetes clusters by exclusively utilizing Traefik as the ingress controller. This policy aims to maintain consistency, enhance security, and simplify the management of ingress traffic.
+
+Scope: This policy applies to all teams and individuals responsible for deploying and managing Kubernetes resources within the company.
+
+Policy Statement:
+
+All ingress resources deployed in any Kubernetes cluster must specify traefik as the ingressClassName.
+Deployment of ingress resources using any class other than traefik is strictly prohibited.
+Any existing ingress resources not complying with this policy must be updated to specify traefik as their ingress class immediately.
+There is a traefik ingress controller installed in the cluster nginx, ha or other ingress controllers are not allowed to be installed.
